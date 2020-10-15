@@ -25,7 +25,7 @@ class _CategorylistState extends State<Categorylist> {
           child: Container(
             alignment: Alignment.center,
             margin: EdgeInsets.only(
-              left: kDefaultPadding,
+              left: index == category.length - 4 ? kDefaultPadding * 1.47 : 0,
               right: index == category.length - 1 ? kDefaultPadding : 0,
             ),
             padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),

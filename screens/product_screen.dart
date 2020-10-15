@@ -17,7 +17,7 @@ class ProductsScreen extends StatelessWidget {
   AppBar buildAppBar() {
     return AppBar(
       elevation: 0,
-      title: Text('Dashboard'),
+      title: Text('Furniturs of Möbel'),
       actions: [
         IconButton(
           icon: SvgPicture.asset('assets/icons/notification.svg'),
