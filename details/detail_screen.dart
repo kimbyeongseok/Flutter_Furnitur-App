@@ -5,12 +5,18 @@ import 'package:furnitur_demo_app/models/product.dart';
 import 'detail_body.dart';
 
 class DetailScreen extends StatelessWidget {
+
+  final Product product;
+  const DetailScreen({Key key, this.product}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kPrimaryColor,
       appBar: buildAppBar(context),
-      body: Body(),
+      body: Body(
+        product: product,
+      ),
     );
   }
 
